@@ -32,9 +32,9 @@ const ItemView = (props) => {
     <>
       <CartLink />
       <Head>
-        <title>Jamstack ECommerce - {name}</title>
+        <title>Fortunato Tapeçaria - {name}</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content={`Jamstack ECommerce - ${name}`} key="title" />
+        <meta property="og:title" content={`Fortunato Tapeçaria - ${name}`} key="title" />
       </Head>
       <div className="
         sm:py-12
@@ -51,7 +51,7 @@ const ItemView = (props) => {
            sm:mt-0 mt-2 text-5xl font-light leading-large
           ">{name}</h1>
           <h2 className="text-2xl tracking-wide sm:py-8 py-6">${price}</h2>
-          <p className="text-gray-600 leading-7">{description}</p>
+          <p className="text-red-600 leading-7">{description}</p>
           <div className="my-6">
             <QuantityPicker
               increment={increment}
@@ -61,7 +61,7 @@ const ItemView = (props) => {
           </div>
           <Button
             full
-            title="Add to Cart"
+            title="Adicionar ao Carrinho de compras"
             onClick={() => addItemToCart(product)}
           />
         </div>

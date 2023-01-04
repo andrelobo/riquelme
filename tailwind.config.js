@@ -167,7 +167,7 @@ module.exports = {
         '-12': '-12',
        },
        backgroundColor: {
-        'primary': '#89bdf9',
+        'primary': '#960D0D',
         'light': '#f5f5f5',
         'light-200': '#f0f0f0',
         'light-300': '#e8e8e8'

@@ -13,7 +13,7 @@ const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
         </div>
         <div className="">
           <p className="text-xl font-semibold mb-1">{title}</p>
-          <p className="text-xs text-gray-700 mb-4">{getTrimmedString(subtitle, 150)}</p>
+          <p className="text-xs text-red-700 mb-4">{getTrimmedString(subtitle, 150)}</p>
         </div>
       </a>
     </Link>

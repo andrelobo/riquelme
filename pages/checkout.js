@@ -41,7 +41,7 @@ const Input = ({ onChange, value, name, placeholder }) => (
   <input
     onChange={onChange}
     value={value}
-    className="mt-2 text-sm shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+    className="mt-2 text-sm shadow appearance-none border rounded w-full py-2 px-3 text-red-700 leading-tight focus:outline-none focus:shadow-outline"
     type="text"
     placeholder={placeholder}
     name={name}
@@ -129,9 +129,9 @@ const Checkout = ({ context }) => {
   return (
     <div className="flex flex-col items-center pb-10">
       <Head>
-        <title>Jamstack ECommerce - Checkout</title>
+        <title>Fortunato Tapeçaria - Checkout</title>
         <meta name="description" content={`Check out`} />
-        <meta property="og:title" content="Jamstack ECommerce - Checkpit" key="title" />
+        <meta property="og:title" content="Fortunato Tapeçaria - Checkpit" key="title" />
       </Head>
       <div
         className="
@@ -144,8 +144,8 @@ const Checkout = ({ context }) => {
           <Link href="/cart">
             <a aria-label="Cart">
               <div className="cursor-pointer flex  items-center">
-                <FaLongArrowAltLeft className="mr-2 text-gray-600" />
-                <p className="text-gray-600 text-sm">Edit Cart</p>
+                <FaLongArrowAltLeft className="mr-2 text-red-600" />
+                <p className="text-red-600 text-sm">Edit Cart</p>
               </div>
             </a>
           </Link>
@@ -165,11 +165,11 @@ const Checkout = ({ context }) => {
                         src={item.image}
                         alt={item.name}
                       />
-                      <p className="m-0 pl-10 text-gray-600">
+                      <p className="m-0 pl-10 text-red-600">
                         {item.name}
                       </p>
                       <div className="flex flex-1 justify-end">
-                        <p className="m-0 pl-10 text-gray-900 font-semibold">
+                        <p className="m-0 pl-10 text-red-900 font-semibold">
                           {DENOMINATION + item.price}
                         </p>
                       </div>
@@ -189,7 +189,7 @@ const Checkout = ({ context }) => {
                       name="name"
                       placeholder="Cardholder name"
                     />
-                    <CardElement className="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                    <CardElement className="mt-2 shadow appearance-none border rounded w-full py-2 px-3 text-red-700 leading-tight focus:outline-none focus:shadow-outline" />
                     <Input
                       onChange={onChange}
                       value={input.email}
@@ -245,7 +245,7 @@ const Checkout = ({ context }) => {
                     FREE SHIPPING
                   </p>
                 </div>
-                <div className="md:ml-4 pl-2 flex flex-1 bg-gray-200 pr-4 pb-1 pt-2 mt-2">
+                <div className="md:ml-4 pl-2 flex flex-1 bg-red-200 pr-4 pb-1 pt-2 mt-2">
                   <p className="text-sm pr-10">Total</p>
                   <p className="font-semibold w-38 flex justify-end">
                     {DENOMINATION + (total + calculateShipping())}

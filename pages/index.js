@@ -13,11 +13,11 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
       <CartLink />
       <div className="w-full">
         <Head>
-          <title>Jamstack ECommerce</title>
-          <meta name="description" content="Jamstack ECommerce" />
-          <meta property="og:title" content="Jamstack ECommerce" key="title" />
+          <title>Fortunato Tapeçaria</title>
+          <meta name="description" content="Fortunato Tapeçaria" />
+          <meta property="og:title" content="Fortunato Tapeçaria" key="title" />
         </Head>
-        <div className="bg-blue-300
+        <div className="bg-red-600
         p-6 pb-10 smpb-6
         flex lg:flex-row flex-col">
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
@@ -40,7 +40,7 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
               />
               <div className="absolute
               w-48 h-48 sm:w-72 sm:h-72 xl:w-88 xl:h-88
-              bg-white z-0 rounded-full" />
+              bg-red z-0 rounded-full" />
           </div>
         </div>
       </div>
@@ -63,8 +63,8 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
         />
       </div>
       <div className="pt-10 pb-6 flex flex-col items-center">
-        <h2 className="text-4xl mb-3">Trending Now</h2>
-        <p className="text-gray-600 text-sm">Find the perfect piece or accessory to finish off your favorite room in the house.</p>
+        <h2 className="text-4xl mb-3">Tendências</h2>
+        <p className="text-gray-600 text-sm">Encontre a peça ou acessório perfeito para finalizar o seu cômodo favorito da casa.</p>
       </div>
       <div className="my-8 flex flex-col lg:flex-row justify-between">
         <DisplaySmall

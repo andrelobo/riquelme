@@ -18,14 +18,14 @@ export default function Layout({ children, categories }) {
           ">
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
               <Link href="/">
-                <a aria-label="Home">
+                <a aria-label="Início">
                   <img src="/logo.png" alt="logo" width="90" height="28" />
                 </a>
               </Link>
             </div>
             <div className="flex flex-wrap mt-1">
               <Link href="/">
-                <a aria-label="Home">
+                <a aria-label="Início">
                   <p className="
                     sm:mr-8 sm:mb-0
                     mb-4 text-left text-smaller mr-4
@@ -52,7 +52,7 @@ export default function Layout({ children, categories }) {
                 ))
               }
               <Link href="/categories">
-                <a aria-label="All categories">
+                <a aria-label="Todos ">
                   <p className="
                     sm:mr-8 sm:mb-0
                     mb-4 text-left text-smaller mr-4 
@@ -75,8 +75,8 @@ export default function Layout({ children, categories }) {
         flex w-fw px-12 py-8
         desktop:px-0
         border-solid
-        border-t border-gray-300">
-          <span className="block text-gray-700 text-xs">Copyright © 2021 JAMstack Ecommerce. All rights reserved.</span>
+        border-t border-red-300">
+          <span className="block text-red-900 text-xs">Copyright © 2023 André Lobo. Todos os direitos reservados</span>
           <div className="
             sm:justify-end sm:m-0
             flex flex-1 mt-4
