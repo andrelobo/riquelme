@@ -527,7 +527,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _inv
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\nconst DENOMINATION = '$';\n/* harmony default export */ __webpack_exports__[\"default\"] = (DENOMINATION);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi91dGlscy9jdXJyZW5jeVByb3ZpZGVyLmpzPzdjYmUiXSwibmFtZXMiOlsiREVOT01JTkFUSU9OIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBLE1BQU1BLFlBQVksR0FBRyxHQUFyQjtBQUVlQSwyRUFBZiIsImZpbGUiOiIuL3V0aWxzL2N1cnJlbmN5UHJvdmlkZXIuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBERU5PTUlOQVRJT04gPSAnJCdcblxuZXhwb3J0IGRlZmF1bHQgREVOT01JTkFUSU9OIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./utils/currencyProvider.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\nconst DENOMINATION = 'R$';\n/* harmony default export */ __webpack_exports__[\"default\"] = (DENOMINATION);//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi91dGlscy9jdXJyZW5jeVByb3ZpZGVyLmpzPzdjYmUiXSwibmFtZXMiOlsiREVOT01JTkFUSU9OIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUFBLE1BQU1BLFlBQVksR0FBRyxJQUFyQjtBQUVlQSwyRUFBZiIsImZpbGUiOiIuL3V0aWxzL2N1cnJlbmN5UHJvdmlkZXIuanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBERU5PTUlOQVRJT04gPSAnUiQnXG5cbmV4cG9ydCBkZWZhdWx0IERFTk9NSU5BVElPTiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./utils/currencyProvider.js\n");
 
 /***/ }),
 
