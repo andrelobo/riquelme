@@ -1,1 +1,0 @@
-{"ast":null,"code":"var DENOMINATION = '$';\nexport default DENOMINATION;","map":{"version":3,"sources":["/home/lobo/Desktop/projektz/fortunato2/utils/currencyProvider.js"],"names":["DENOMINATION"],"mappings":"AAAA,IAAMA,YAAY,GAAG,GAArB;AAEA,eAAeA,YAAf","sourcesContent":["const DENOMINATION = '$'\n\nexport default DENOMINATION"]},"metadata":{},"sourceType":"module"}

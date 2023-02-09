@@ -17,14 +17,14 @@ export default function Layout({ children, categories }) {
             px-4 pt-8 flex flex-col w-fw
           ">
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a aria-label="Início">
-                  <img src="/logo.png" alt="logo" width="90" height="28" />
+                  <img src="/logo.png" alt="logo" width="180" height="56" />
                 </a>
               </Link>
             </div>
             <div className="flex flex-wrap mt-1">
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a aria-label="Início">
                   <p className="
                     sm:mr-8 sm:mb-0
@@ -37,8 +37,8 @@ export default function Layout({ children, categories }) {
               {
                 categories.map((category, index) => (
                   <Link
-                    href={`/category/${slugify(category)}`}
-                    key={index}
+                    href={`/category/${slugify(category)}`} legacyBehavior
+                    key={index} 
                   >
                     <a aria-label={category}>
                       <p className="
@@ -51,7 +51,7 @@ export default function Layout({ children, categories }) {
                   </Link>
                 ))
               }
-              <Link href="/categories">
+              <Link href="/categories" legacyBehavior>
                 <a aria-label="Todos ">
                   <p className="
                     sm:mr-8 sm:mb-0
@@ -81,7 +81,7 @@ export default function Layout({ children, categories }) {
             sm:justify-end sm:m-0
             flex flex-1 mt-4
           ">
-            <Link href="/admin">
+            <Link href="/admin" legacyBehavior>
               <a aria-label="Admin panel">
               <p className="text-sm font-semibold">Admins</p>
               </a>
