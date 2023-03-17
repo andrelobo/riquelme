@@ -75,7 +75,7 @@ export default function Layout({ children, categories }) {
         flex w-fw px-12 py-8
         desktop:px-0
         border-solid
-        border-t border-red-300">
+        border-t border-red-900">
           <span className="block text-red-900 text-xs">Copyright © 2023 André Lobo. Todos os direitos reservados</span>
           <div className="
             sm:justify-end sm:m-0

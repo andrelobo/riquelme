@@ -18,12 +18,16 @@
   font-family: "Eina SemiBold";
   src: url("/fonts/Eina-SemiBold.otf");
 }
+.mb-4 sm:mr-16 max-w-48 sm:max-w-none{
+
+  margin-left:30px;
+}
 
 
 
 @layer base {
   p,h1,h2, h3, h4, h5 {
-    color: rgba(79, 1, 1, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     font-family: Eina;
   }
   .text-4xl xl:text-5xl font-bold tracking-widest leading-none{

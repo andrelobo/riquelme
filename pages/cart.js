@@ -82,12 +82,12 @@ const Cart = ({ context }) => {
                               />
                             </div>
                             <div className="flex flex-1 justify-end">
-                              <p className="m-0 pl-10 text-red-900 tracking-wider">
+                              <p className="m-0 pl-10 text-red-300 tracking-wider">
                                 {DENOMINATION + item.price}
                               </p>
                             </div>
                             <div role="button" onClick={() => removeFromCart(item)} className="
-                            m-0 ml-10 text-red-900 text-s cursor-pointer
+                            m-0 ml-10 text-red-300 text-s cursor-pointer
                             ">
                               <FaTimes />
                             </div>
@@ -124,7 +124,7 @@ const Cart = ({ context }) => {
                               </div>
                             </div>
                             <div role="button" onClick={() => removeFromCart(item)} className="
-                            m-0 ml-10 text-red-900 text-s cursor-pointer mr-2
+                            m-0 ml-10 text-red-300 text-s cursor-pointer mr-2
                             ">
                               <FaTimes />
                             </div>

@@ -17,7 +17,7 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
           <meta name="description" content="Fortunato Tapeçaria" />
           <meta property="og:title" content="Fortunato Tapeçaria" key="title" />
         </Head>
-        <div className="bg-red-900
+        <div className="bg-red-500
         p-6 pb-10 smpb-6
         flex lg:flex-row flex-col">
           <div className="pt-4 pl-2 sm:pt-12 sm:pl-12 flex flex-col">
@@ -26,12 +26,12 @@ const Home = ({ inventoryData = [], categories: categoryData = [] }) => {
               category="SOFAS"
             />
             <Center
-              price="200"
+              price="2900"
               title={inventory[2].name}
               link={`/product/${slugify(inventory[2].name)}`}
             />
             <Footer
-              designer="Jason Bourne"
+              designer="JFortunato Tapeçaria"
             />
           </div>
           <div className="flex flex-1 justify-center items-center relative">

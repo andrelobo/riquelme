@@ -19,7 +19,7 @@ export default function Layout({ children, categories }) {
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
               bg-red-900 href="/" legacyBehavior>
                 <a aria-label="Início">
-                  <img src="/logo.png" alt="logo" width="90" height="28" />
+                  <img src="/logo.png" alt="logo" width="90" height="28" margin-left="30" />
                 </a>
               </Link>
             </div>
@@ -30,7 +30,7 @@ export default function Layout({ children, categories }) {
                     sm:mr-8 sm:mb-0
                     mb-4 text-left text-smaller mr-4
                   ">
-                  Home
+                  Inicio
                   </p>
                 </a>
               </Link>
