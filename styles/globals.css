@@ -39,3 +39,9 @@
 .Toastify__progress-bar--default {
   background: rgb(238, 2, 2) !important;
 }
+
+@media (max-width: 480px) {
+  .mb-4 {
+    margin-left: 50px;
+  }
+}
