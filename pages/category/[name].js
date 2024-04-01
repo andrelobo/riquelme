@@ -9,11 +9,11 @@ const Category = (props) => {
   const { inventory, title } = props
   return (
     <>
-      <CartLink /> Fortunato Tapeçaria
+      <CartLink /> Riquelme Multimarcas
       <Head>
-        <title>Fortunato Tapeçaria - {title}</title>
-        <meta name="description" content={`Fortunato Tapeçaria - ${title}`} />
-        <meta property="og:title" content={`Fortunato Tapeçaria - ${title}`} key="title" />
+        <title>Riquelme Multimarcas - {title}</title>
+        <meta name="description" content={`Riquelme Multimarcas - ${title}`} />
+        <meta property="og:title" content={`Riquelme Multimarcas - ${title}`} key="title" />
       </Head>
       <div className="flex flex-col items-center">
         <div className="max-w-fw flex flex-col w-full">

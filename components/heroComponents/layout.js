@@ -4,86 +4,56 @@ import 'react-toastify/dist/ReactToastify.css'
 import { ToastContainer } from 'react-toastify'
 import { navItemLength } from '../ecommerce.config'
 
-export default function Layout({ children, categories }) {
-  if (categories.length > navItemLength) {
-    categories = categories.slice(0, navItemLength)
-  }
+export default function Layout({ categories, children }) {
+  const truncatedCategories = categories.slice(0, navItemLength)
+
+  const navLinks = [
+    { label: 'Home', href: '/' },
+    ...truncatedCategories.map(category => ({
+      label: category.charAt(0).toUpperCase() + category.slice(1),
+      href: `/category/${slugify(category)}`
+    })),
+    { label: 'All', href: '/categories' }
+  ]
+
   return (
     <div>
       <nav>
         <div className="flex justify-center">
-          <div className="
-            mobile:px-12 sm:flex-row sm:pt-12 sm:pb-6 desktop:px-0
-            px-4 pt-8 flex flex-col w-fw
-          ">
+          <div className="flex flex-col px-4 pt-8 sm:flex-row sm:pt-12 sm:pb-6 desktop:px-0 w-full max-w-fw">
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
-              bg-red-900 href="/" legacyBehavior>
-                <a aria-label="Início">
-                  <img src="/logo.png" alt="logo" width="90" height="28" margin-left="30" />
+              <Link href="/" aria-label="Home">
+                <a>
+                  <img src="/logo.png" alt="Logo" width="250" height="250" />
                 </a>
               </Link>
             </div>
             <div className="flex flex-wrap mt-1">
-              bg-red-900 href="/" legacyBehavior>
-                <a aria-label="Início">
-                  <p className="
-                    sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4
-                  ">
-                  Inicio
-                  </p>
-                </a>
-              </Link>
-              {
-                categories.map((category, index) => (
-                  bg-red-900
-                    href={`/category/${slugify(category)}`} legacyBehavior
-                    key={index} 
-                  >
-                    <a aria-label={category}>
-                      <p className="
-                          sm:mr-8 sm:mb-0
-                          mb-4 text-left text-smaller mr-4
-                        ">
-                        {category.charAt(0).toUpperCase() + category.slice(1)}
-                      </p>
-                    </a>
-                  </Link>
-                ))
-              }
-              bg-red-900 href="/categories" legacyBehavior>
-                <a aria-label="Todos ">
-                  <p className="
-                    sm:mr-8 sm:mb-0
-                    mb-4 text-left text-smaller mr-4 
-                  ">
-                  All
-                  </p>
-                </a>
-              </Link>
+              {navLinks.map(({ label, href }, index) => (
+                <Link href={href} key={index} aria-label={label}>
+                  <a>
+                    <p className="sm:mr-8 sm:mb-0 mb-4 text-left text-smaller mr-4">
+                      {label}
+                    </p>
+                  </a>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
       </nav>
-      <div className="mobile:px-10 px-4 pb-10 flex justify-center">
-        <main className="w-fw">{children}</main>
+      <div className="px-4 pb-10 flex justify-center">
+        <main className="w-full">{children}</main>
       </div>
-      <footer className="flex justify-center">
-        <div className="
-        sm:flex-row sm:items-center
-        flex-col
-        flex w-fw px-12 py-8
-        desktop:px-0
-        border-solid
-        border-t border-red-300">
-          <span className="block text-red-900 text-xs">Copyright © 2023 André Lobo. Todos os direitos reservados</span>
-          <div className="
-            sm:justify-end sm:m-0
-            flex flex-1 mt-4
-          ">
-            bg-red-900 href="/admin" legacyBehavior>
-              <a aria-label="Admin panel">
-              <p className="text-sm font-semibold">Admins</p>
+      <footer className="flex justify-center border-t border-red-300 desktop:px-0">
+        <div className="flex flex-col sm:flex-row sm:items-center px-12 py-8">
+          <span className="block text-red-900 text-xs">
+            © 2023 André Lobo. All rights reserved
+          </span>
+          <div className="sm:justify-end flex flex-1 mt-4 sm:m-0">
+            <Link href="/admin" aria-label="Admin panel">
+              <a>
+                <p className="text-sm font-semibold">Admins</p>
               </a>
             </Link>
           </div>

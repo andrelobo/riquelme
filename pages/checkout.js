@@ -129,9 +129,9 @@ const Checkout = ({ context }) => {
   return (
     <div className="flex flex-col items-center pb-10">
       <Head>
-        <title>Fortunato Tapeçaria - Checkout</title>
+        <title>Riquelme Multimarcas - Checkout</title>
         <meta name="description" content={`Check out`} />
-        <meta property="og:title" content="Fortunato Tapeçaria - Checkpit" key="title" />
+        <meta property="og:title" content="Riquelme Multimarcas - Checkpit" key="title" />
       </Head>
       <div
         className="

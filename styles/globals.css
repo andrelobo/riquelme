@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --text-color: rgb(255, 251, 11);
+  --background-color: #000; /* Cor de fundo escura para o tema escuro */
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+
+
 @font-face {
   font-family: "Eina";
   src: url("/fonts/Eina.otf");
@@ -26,14 +38,13 @@
 
 
 @layer base {
-  p,h1,h2, h3, h4, h5 {
-    color: rgba(0, 0, 0, 0.8);
+  p, h1, h2, h3, h4, h5 {
+    color: var(--text-color);
     font-family: Eina;
   }
-  .text-4xl xl:text-5xl font-bold tracking-widest leading-none{
+  .text-4xl xl:text-5xl font-bold tracking-widest leading-none {
     color: #fff;
   }
-  
 }
 
 .Toastify__progress-bar--default {

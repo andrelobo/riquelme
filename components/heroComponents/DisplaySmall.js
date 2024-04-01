@@ -3,9 +3,9 @@ import { getTrimmedString } from '../../utils/helpers'
 import Image from '../Image'
 
 const DisplaySmall = ({ link, title, subtitle, imageSrc }) =>  (
-  <div className="lg:w-flex-fourth bg-light
+  <div className="lg:w-flex-fourth bg-dark
   px-6 pt-10 pb-2 lg:p-6 lg:pb-0
-  hover:bg-light-200 lg:mb-0 mb-4">
+  hover:bg-dark-200 lg:mb-0 mb-4">
     <Link href={link} legacyBehavior>
       <a aria-label={title}>
         <div className="flex flex-column justify-center items-center h-32">

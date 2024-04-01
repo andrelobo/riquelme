@@ -10,9 +10,9 @@ function Categories ({ categories = [] }) {
       <div className="w-full">
         <CartLink />
         <Head>
-          <title> Fortunato Tapeçaria - Categorias</title>
-          <meta name="description" content={`Fortunato Tapeçaria - Todas as categorias`} />
-          <meta property="og:title" content="Fortunato Tapeçaria - Todas as categorias" key="title" />
+          <title> Riquelme Multimarcas - Categorias</title>
+          <meta name="description" content={`Riquelme Multimarcas - Todas as categorias`} />
+          <meta property="og:title" content="Riquelme Multimarcas - Todas as categorias" key="title" />
         </Head>
         <div className="
           pt-4 sm:pt-10 pb-8

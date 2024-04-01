@@ -19,7 +19,7 @@ export default function Layout({ children, categories }) {
             <div className="mb-4 sm:mr-16 max-w-48 sm:max-w-none">
               <Link href="/" legacyBehavior>
                 <a aria-label="Início">
-                  <img src="/logo.png" alt="logo" width="180" height="56" />
+                  <img src="/logo.png" alt="logo" width="250" height="250" />
                 </a>
               </Link>
             </div>
@@ -75,8 +75,8 @@ export default function Layout({ children, categories }) {
         flex w-fw px-12 py-8
         desktop:px-0
         border-solid
-        border-t border-red-900">
-          <span className="block text-red-900 text-xs">Copyright © 2023 André Lobo. Todos os direitos reservados</span>
+        border-t border-yellow-600">
+          <span className="block text-yellow-400 text-xs">Copyright © 2023 André Lobo. Todos os direitos reservados</span>
           <div className="
             sm:justify-end sm:m-0
             flex flex-1 mt-4
