@@ -1,6 +1,6 @@
-## Fortunato Tapeçaria Next
+## Riquelme Multimarcas Next
 
-Fortunato Tapeçaria Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js.
+Riquelme Multimarcas Next provides a way to quickly get up and running with a fully configurable ECommerce site using Next.js.
 
 Out of the box, the site uses completely static data coming from a provider at `providers/inventoryProvider.js`. You can update this provider to fetch data from any real API by changing the call in the `getInventory` function.
 
@@ -11,7 +11,7 @@ Out of the box, the site uses completely static data coming from a provider at `
 Click [here](https://www.jamstackecommerce.dev/) to see a live preview.
 
 <details>
-  <summary>Other Fortunato Tapeçaria pages</summary>
+  <summary>Other Riquelme Multimarcas pages</summary>
 
 ### Category view
 ![Category view](example-images/2.png)
@@ -178,4 +178,4 @@ await Promise.all(
 
 To see an example of how to process payments server-side with stripe, check out the [Lambda function in the snippets folder](https://github.com/jamstack-cms/jamstack-ecommerce/blob/next/snippets/lambda.js).
 
-Also, consider verifying totals by passing in an array of IDs into the function, calculating the total on the server, then comparing the totals to check and make sure they match.
+Also, consider verifying totals by passing in an array of IDs into the function, calculating the total on the server, then comparing the totals to check and make sure they match.# riquelme
