@@ -20,9 +20,7 @@ let inventory = [
   {
     categories: ['calca', 'calca'], name: 'Calça Bege', price: '2900', image: '/products/calca_bege.jpeg', description: 'Você não precisa sair para ser resistente. O sofá de couro cru Cigar apresenta uma estrutura robusta de madeira com cantos bloqueados e costuras brutas para aquele visual de Malboro. Este sofá de couro marrom é aconchegante em uma casa de campo, cabana ou condomínio. E o couro (o couro!) fica mais bonito com o uso: marcas sutis de caracteres como picadas de insetos, cicatrizes cicatrizadas e variação de grão refletem uma verdadeira safra. Prepare-se e passe o controle remoto.', currentInventory: 14 },
 
-  
-    
-  
+   
   
  
 ]
